@@ -1,0 +1,15 @@
+package TestCases;
+
+import org.testng.SkipException;
+import org.testng.annotations.Test;
+
+public class Testskip extends BaseTest {
+	
+	@Test
+	public void isSkip() {
+		
+		throw new SkipException("Skipping the test as the condition");
+			
+	}
+
+}
